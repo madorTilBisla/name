@@ -1,0 +1,232 @@
+@font-face{
+    src: url("VarelaRound-Regular.ttf");
+    font-family: VarelaRound;
+}
+
+* {
+    font-family: VarelaRound;
+    /* overflow: hidden; */
+}
+
+body,
+html {
+    margin: 0px;
+    padding: 0px;
+    background-image: url("Screen_new.png");
+    background-size: 100vw 117vh;
+    /* overflow: hidden; */
+}
+
+.body2 {
+    overflow: hidden;
+}
+
+.life {
+    text-align: left;
+    direction: rtl;
+    position: relative;
+    left: 18vw;
+}
+
+.lifes {
+    margin-left : 5px;
+    position: relative;
+    left: 66vw;
+}
+
+.heart {
+    height: 3vh;
+    width: auto;
+}
+
+.erows {
+    height: auto;
+    width: 22vw;
+}
+
+.left-erow {
+    position: absolute;
+    top: 92vh;
+    transform: rotate(180deg);
+}
+
+.right-erow {
+    position: absolute;
+    top: 92vh;
+    left: 78vw;
+}
+
+.all-subject {
+    position: absolute;
+    top: 78vh;
+    left: 4vw;
+    display: flex;
+    justify-content: center;
+}
+
+.catagories {
+    height: 10vh;
+    width: 26vw;
+    padding-left: 4vw;
+}
+
+.catagor {
+    background-color: rgba(255, 255, 255, 0.671);
+    text-align: center;
+    position: relative;
+    right: 10vw;
+    bottom: 1vh;
+    font-size: 4.1vw;
+    border-radius: 3vw;
+    padding: 1vw;
+    margin-top: 7vh;
+}
+
+.subj1{
+    width: 24vw;
+    height: auto;
+    margin-left: 15vw;
+}
+
+.subj2{
+    width: 20vw;
+    height: auto;
+    margin-left: 5vw;
+    padding-top: 2vh;
+}
+
+.subj3{
+    width: 20vw;
+    height: auto;
+    margin-left: 7vw;
+}
+
+.concept {
+    height: 16vh;
+    width: 20vw;
+    position: absolute;
+    left: 35vw;
+    top: -7vh;
+    animation: ShapeDown 7s linear infinite;
+    -webkit-animation: ShapeDown 7s linear infinite;;
+}
+
+.star {
+    /* height: 18vh; */
+    width: 22vw;
+    position: absolute;
+    bottom: 10vh;
+    left: 5vw;
+}
+
+.concept-text {
+    position: absolute;
+    bottom: 15vh;
+    left: 8vw;
+    direction: rtl;
+    text-align: center;
+    font-size: 3.2vw;
+    font-weight: 700;
+    /* font-weight: 900; */
+}
+
+@keyframes ShapeDown {
+    0% {
+        top: -7vh;
+    }
+    100% {
+        top: 85vh;
+    }
+}
+
+@-webkit-keyframes ShapeDown {
+    0% {
+        top: -7vh;
+    }
+    100% {
+        top: 85vh;
+    }
+}
+
+.win {
+    height: 50vh;
+    width: 80vw;
+    position: absolute;
+    top: 18vh;
+    left: 3vw;
+    text-align: center;
+    direction: rtl;
+    background-color: rgba(18, 146, 18, 0.438);
+    border-style: solid;
+    border-radius: 3vw;
+    border-color: rgb(18, 146, 18);
+    font-size: 5vw;
+    font-weight: 545;
+    padding: 5vw;
+    opacity: 0;
+}
+
+.lose {
+    height: 50vh;
+    width: 80vw;
+    position: absolute;
+    top: 18vh;
+    left: 3vw;
+    text-align: center;
+    direction: rtl;
+    background-color: rgba(233, 126, 126, 0.63);
+    border-style: solid;
+    border-radius: 3vw;
+    border-color: rgb(214, 16, 16);
+    font-size: 5vw;
+    font-weight: 545;
+    padding: 5vw;
+    opacity: 0;
+}
+
+.try-again {
+    height: 10vh;
+    width: 23vw;
+    font-size:4.5vw;
+    position: relative;
+    top: 35vh;
+    left: 38vw; 
+    /* border-color: rgb(192, 181, 181); */
+    opacity: 0;
+    border-radius: 3vw;
+    border-style: none;
+}
+
+.start {
+    height: 117vh;
+    width: 100vw;
+    background-image: url("screen.png");
+    background-size: 100vw 109vh;
+    text-align: center;
+    direction: rtl;
+}
+
+.explanation {
+    position: absolute;
+    top: 20vh;
+    right: 9vw;
+    font-size: 4.2vw;
+    /* overflow: hidden; */
+}
+
+.start-game {
+    position: relative;
+    top: 96vh;
+    font-weight: 900;
+}
+
+.startGame {
+    height: 6vh;
+    width: 22vw;
+    position: relative;
+    top: 60vh;
+    font-size: 3.5vw;
+    margin-left: 2.5vh;
+    border-radius: 3vw;
+    border-style: none;
+}
